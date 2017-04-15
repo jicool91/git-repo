@@ -5,9 +5,13 @@
 	<title>Document</title>
 </head>
 <body>
+	<p id="x">Hello World</p>
+	<button onclick="changeText()">Push</button>
 	<script>
-		alert("Hello World!");
-		alert("Hello everybody!");
+		function changeText() {
+			var text = document.getElementById('x');
+			text.innerText = "Hello everybody";
+		}
 	</script>
 </body>
 </html>
